@@ -5,19 +5,24 @@
 /* common shared style */
 /* common shared style */
 /* common shared style */
+
+
 .work-font {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
-.shadow{
-    border:1px solid rgba(38, 243, 123, 0.226);
+
+.shadow {
+    border: 1px solid rgba(38, 243, 123, 0.226);
     border-radius: 8px;
-    box-shadow: 1px 1px yellow;
-    
- 
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+
+
 }
+
 .m-auto {
     margin: 0 auto;
 }
@@ -68,7 +73,7 @@
 
 main {
     max-width: 1340px;
-    margin: auto;
+    margin: 20px auto;
 }
 
 section {
@@ -86,6 +91,7 @@ section {
     margin-bottom: 5px;
 
 }
+
 
 /* end of common shared style  */
 
@@ -200,7 +206,7 @@ nav {
 }
 
 .love-content {
-    width: 50%;
+    width: 40%;
     flex-direction: column;
     gap: 10px;
     padding-right: 50px;
@@ -216,7 +222,7 @@ nav {
 
 .love-img {
 
-    width: 50%;
+    width: 60%;
 }
 
 .love-img img {
@@ -224,6 +230,87 @@ nav {
     height: 100%;
 }
 
+.shadow:hover {
+
+    box-shadow: 0px 4px 30px 0px rgba(81, 194, 20, 0.664);
+}
+
+/* end of you love and enjoy feature  */
+/* facts section styles started */
+.facts {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.facts-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.facts-card {
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.card-header {
+    color: #424242;
+    text-align: center;
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid rgba(128, 128, 128, 0.274);
+    width: 25%;
+    margin: 10px;
+
+}
+
+.card:hover {
+    background-color: #ff8f0e48;
+}
+
+
+/* started sponser section style */
+.sponser {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sponsor-des {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 15px;
+
+}
+
+footer {
+    max-width: 1340px;
+    padding: 40px;
+    margin: 20px auto;
+    text-align: center;
+    color: #424242;
+    font-size: 1rem;
+}
 
 
 
@@ -256,10 +343,77 @@ nav {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* end of team features section  */
+    /* start of you enjoy features section */
+
+    .you-love-enjoy {
+        flex-direction: column;
+
+    }
+
+    .love-content {
+        width: auto;
+        padding-right: 0;
+    }
+
+    .love-img {
+        width: auto;
+    }
+
+    .facts-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid rgba(128, 128, 128, 0.274);
+        width: auto;
+        margin-right: 0;
+        margin-left: 0;
+
+
+    }
+    /* sponsor details style  */
+
+
+   
+    
+   
+    
+    
+    .logo {
+        display: flex;
+        flex-wrap: wrap;
+       align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+
+       
+        
+      
+    
+    }
+    .logo img{
+    
+    }
+    
+    footer {
+        max-width: 1340px;
+        padding: 40px;
+        margin: 20px auto;
+        text-align: center;
+        color: #424242;
+        font-size: 1rem;
+    }
+
 
 }
 
-@media screen and (min-width:577px) and (max-width: 992px) {
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
 
     nav {
         flex-direction: column;
@@ -281,6 +435,48 @@ nav {
     .team-img-container {
         width: 100%;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+    .you-love-enjoy {
+       flex-direction: column;
+    
+    }
+    
+    .love-content {
+        width: auto;
+        padding-right: 0;
+    }
+    
+
+    
+    
+    .love-img {
+    
+        width: auto;
+    }
+    
+
+    
+
+
+
+
+
+
+    .facts-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+
+        align-items: center;
+        padding: 50px auto;
+        border: 1px solid rgba(128, 128, 128, 0.274);
+        width: auto;
+
+
     }
 
 
