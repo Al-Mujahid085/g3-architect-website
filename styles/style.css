@@ -1,10 +1,126 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
+/* common shared style */
+/* common shared style */
+/* common shared style */
+/* common shared style */
 .work-font {
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-  }
+}
+.m-auto{
+    margin: 0 auto;
+}
+
+.btn-primary {
+    background-color: #FF900E;
+    color: #FFF;
+
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 18px;
+    border-radius: 8px;
+    border: 0;
+}
+.btn-primary:hover{
+    color: black;
+    background-color: #FFF;
+}
+
+.display-flex {
+    display: flex;
+}
+
+/* dark-1 */
+.head-color {
+    color: #131313;
+
+}
+
+/* dark-3 */
+.para-color {
+    color: #727272;
+}
+
+.bg-primary {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+/* end of common shared style  */
+
+/* header section styles */
+header {
+    max-width: 1340px;
+}
+
+.header-sec {
+    display: flex;
+    flex-direction: column;
+    max-width: 1010px;
+    margin: 0 auto;
+    padding: 35px 0px;
+}
+
+
+
+
+/* nav related styles */
+.nhead {
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+
+.nitem {
+    font-size: 1rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.nitem>a {
+    text-decoration: none;
+    color: #424242;
+    margin-right: 20px;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+/* end of nav related styles  */
+.banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 35px;
+
+}
+
+
+.bnr-head>h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 90%;
+    margin-bottom: 0;
+
+}
+
+.bnr-img>img {
+    max-width: 100%;
+}
+
+/* completed header section  */
+
+
+@media screen and (max-width:576px) {
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
