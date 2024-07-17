@@ -11,7 +11,8 @@
     font-weight: 400;
     font-style: normal;
 }
-.m-auto{
+
+.m-auto {
     margin: 0 auto;
 }
 
@@ -26,7 +27,8 @@
     border-radius: 8px;
     border: 0;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     color: black;
     background-color: #FFF;
 }
@@ -48,6 +50,15 @@
 
 .bg-primary {
     background-color: rgba(255, 144, 14, 0.10);
+}
+
+main {
+    max-width: 1340px;
+    margin: auto;
+}
+
+section {
+    margin-top: 90px;
 }
 
 /* end of common shared style  */
@@ -114,13 +125,71 @@ nav {
 }
 
 /* completed header section  */
+/* start main section  */
+/* start features section styles */
+
+.teams {
+  
+    max-width: 1010px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid rgba(0, 0, 0, 0.103);
+    padding: 10px;
+    gap: 20px;
+
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 50%;
+}
+
+.team-img-container img {
+    
+    height: 100%;
+    width: 100%;
+}
+
+.our-features {
+    /* margin: auto auto auto 100px; */
+    width: 50%;
+}
+
+.our-features h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* end of team/features section  */
+
+
+
 
 
 @media screen and (max-width:576px) {
 
-    nav{
+    nav {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
+}
+
+/* ended responsive header styles */
+
+/* start responsive team/features section  */
+.teams{
+    flex-direction: column;
+    flex-direction: column-reverse;
+
+}
+.our-features{
+   width: 100%;
+    
+}
+.team-img-container{
+    width: 100%;
 }
